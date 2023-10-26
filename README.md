@@ -6,7 +6,7 @@ dora-srl-support
 
 添加以下代码到项目根目录下的settings.gradle.kts
 ```kotlin
-dependencyResolutionManagement { {
+dependencyResolutionManagement {
     repositories {
         maven("https://jitpack.io")
     }
