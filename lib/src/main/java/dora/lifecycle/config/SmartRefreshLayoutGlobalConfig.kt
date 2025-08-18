@@ -9,21 +9,21 @@ import dora.lifecycle.application.SmartRefreshLayoutApplicationLifecycle
 class SmartRefreshLayoutGlobalConfig : GlobalConfig {
 
     override fun injectApplicationLifecycle(
-        context: Context?,
-        lifecycles: MutableList<ApplicationLifecycleCallbacks>?
+        context: Context,
+        lifecycles: MutableList<ApplicationLifecycleCallbacks>
     ) {
-        lifecycles?.add(SmartRefreshLayoutApplicationLifecycle())
+        lifecycles.add(SmartRefreshLayoutApplicationLifecycle())
     }
 
     override fun injectActivityLifecycle(
-        context: Context?,
-        lifecycles: MutableList<Application.ActivityLifecycleCallbacks>?
+        context: Context,
+        lifecycles: MutableList<Application.ActivityLifecycleCallbacks>
     ) {
     }
 
     override fun injectFragmentLifecycle(
-        context: Context?,
-        lifecycles: MutableList<FragmentManager.FragmentLifecycleCallbacks>?
+        context: Context,
+        lifecycles: MutableList<FragmentManager.FragmentLifecycleCallbacks>
     ) {
     }
 }
