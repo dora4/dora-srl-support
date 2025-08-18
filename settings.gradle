@@ -25,5 +25,5 @@ dependencyResolutionManagement {
         maven { url "https://jitpack.io" }
     }
 }
-rootProject.name = "dora-dagger-support"
+rootProject.name = "dora-srl-support"
 include ':lib'
