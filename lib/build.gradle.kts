@@ -6,7 +6,7 @@ plugins {
 
 android {
     namespace = "dora.lifecycle.srl"
-    compileSdk = 34
+    compileSdk = 36
 
     defaultConfig {
         minSdk = 21
@@ -26,7 +26,7 @@ android {
 
 dependencies {
     implementation("androidx.appcompat:appcompat:1.7.1")
-    implementation("com.github.dora4:dora:1.3.14")
+    implementation("com.github.dora4:dora:1.3.53")
     val refreshVersion = "2.0.6"
     api("io.github.scwang90:refresh-layout-kernel:$refreshVersion")
     api("io.github.scwang90:refresh-header-classics:$refreshVersion")
@@ -40,7 +40,7 @@ afterEvaluate {
                 from(components["release"])
                 groupId = "com.github.dora4"
                 artifactId = "dora-srl-support"
-                version = "1.1"
+                version = "1.2"
             }
         }
     }
